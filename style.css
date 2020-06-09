@@ -77,7 +77,7 @@ main {
     flex-grow: 1;
 }
 
-main div {
+.main-content {
     background: white;
     box-shadow: 8px 8px 25px grey;
     height: 30vh;
@@ -88,11 +88,11 @@ main div {
     position: relative;
 }
 
-main div p {
+.main-content p {
     margin-bottom: 2%;
 }
 
-main div a {
+.main-content a {
     background: #e6d9ff;
     color: dimgray;
     font-size: 1.5vh;
@@ -104,7 +104,7 @@ main div a {
 
 }
 
-main div a:hover {
+.main-content a:hover {
     background: #dcc9ff;
     color: black;
     box-shadow: 12px 12px 25px grey;
@@ -260,14 +260,14 @@ footer div div p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20%;
     margin: 2em;
 }
 
 .project-div
 {
+    flex: 0 0 25%;
     display: block;
-    margin: 0.5em;
+    margin: 2em 1.5em;
     padding: 0;
     border: 0;
     cursor: pointer;
@@ -280,17 +280,9 @@ footer div div p {
     width: 100%;
 }
 
-.project-div:hover .overlay {
-    background-color: black;
-}
-
-.project-div:hover img {
-    opacity: 0.7;
-}
-
 .overlay-img {
-    max-width: 25vh;
-    max-height: 25vh;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* .projectsection {
